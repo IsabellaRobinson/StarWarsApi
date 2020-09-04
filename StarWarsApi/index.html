@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Api</title>
+    <link rel="icon" href="./img/yodaicon.png">
+    <link rel="stylesheet" href="./layout.css">
+    <link rel="stylesheet" href="./search.css">
+</head>
+<body>
+
+    <form action="search.html" class="searchBar">
+        <input type="search" name="keyword">
+        <button type="submit">Search</button>
+    </form>
+    
+    <a href="./index.html">
+        <img src="./img/logo.png" alt="" onclick="bleep.play()">
+    </a>
+    
+    <main>
+        <ul id="peopleList"></ul>
+        <a href="" class="previousLink">Previous</a>
+        <a href="?page=2" class="nextLink">Next</a>
+        
+        <div class="spinnerContainer">
+            <div class="spinner">
+           <img src="./img/yoda.png" alt="">  <!--<span>Loading...</span>-->
+            </div>
+        </div>
+    
+    </main>
+    
+    <template id="template">
+        <a href="" class="listItem"></a>
+        <a href="#" class="next"> </a>
+        <li style="list-style:none;">
+        </li>
+    </template>
+
+    <script src="./fetch.js"></script>
+</body>
+</html>

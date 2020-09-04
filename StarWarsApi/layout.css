@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+
+* {
+    display: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Russo One', sans-serif;
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;  
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+main {
+    width: 30%;
+    margin: auto;
+
+}
+
+/* @keyframes example {
+    to {top: 0px;}
+    from {top: 200px;}
+} */
+
+
+
+/* BILLEDE */
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* TEKST */
+a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgba(243, 232, 184, 0.781);
+    text-decoration: none;
+    font-size: large;
+    /* cursor: url('Darth\ Vader\ H\ Cur.cur,' auto); */
+}
+
+
+a:hover {
+    transition-duration: 0.5s;
+    color: rgb(255, 208, 0);
+    font-size: xx-large;
+}
+
+li {
+    padding: auto;
+}
+
+
+/* KNAP */
+.nextLink, .previousLink {
+    border: none;
+    margin:  auto;
+    transition-duration: 0.5s;
+    align-items: center;
+    font-size: medium;
+    padding: 10px;
+}
+
+
+/* CHARACTERS-SHEET */
+.characters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+span {
+    font-size: xx-large;
+    color:  rgba(241, 228, 209, 0.644);
+}
+
+
+p {
+    margin: 20px;
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.685);
+}
+
+p:hover {
+    font-size: xx-large;
+    color: white;
+}
+
+span:hover {
+    color:  rgba(241, 228, 209, 0.863);
+}
+
+
+/* CSS LOADER */
+.spinnerContainer {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.spinner {
+    margin: auto;
+    position: relative;
+    width: 10%;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
